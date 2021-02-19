@@ -8,7 +8,7 @@ echo "---> Enabling s2i support in httpd24 image"
 
 config_s2i
 
-######## CUSTOMIZATION STARTS HERE ############
+######### CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
@@ -19,7 +19,7 @@ echo "---> Creating info page"
 echo "Page built on $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
-######## CUSTOMIZATION ENDS HERE ############
+######### CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
